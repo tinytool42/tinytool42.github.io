@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>TinyTool by mario_crazyy</title>
+<style>
+  /* Reset */
+  * {
+    margin: 0; padding: 0; box-sizing: border-box;
+  }
+  body {
+    font-family: "Courier New", Courier, monospace;
+    background: #121212;
+    color: #a0ffa0;
+    line-height: 1.5;
+  }
+
+  /* Fixed header */
+  header {
+    background: #0f0f0f;
+    border-bottom: 1px solid #060606;
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    z-index: 1000;
+  }
+  header h1 {
+    font-weight: normal;
+    font-size: 1.2rem;
+    color: #60ff60;
+  }
+  header nav {
+    margin-left: auto;
+  }
+  header nav a {
+    font-size: 0.9rem;
+    margin-left: 2rem;
+    color: #60ff60;
+    text-decoration: none;
+  }
+  header nav a:hover {
+    text-decoration: underline;
+  }
+
+  /* Main container */
+  .container {
+    max-width: 960px;
+    margin: 80px auto 40px;
+    padding: 0 20px;
+  }
+
+  /* Page title */
+  h1.page-title {
+    font-weight: normal;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #60ff60;
+  }
+
+  /* Sections */
+  section {
+    margin-bottom: 3rem;
+  }
+  h2 {
+    font-weight: normal;
+    font-size: 1.3rem;
+    border-bottom: 1px solid #0b0b0b;
+    padding-bottom: 6px;
+    margin-bottom: 1rem;
+    color: #60ff60;
+  }
+  p {
+    margin-bottom: 1rem;
+  }
+  ul {
+    list-style: none;
+    padding-left: 1rem;
+  }
+  ul li {
+    position: relative;
+    padding-left: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+  ul li::before {
+    content: "»";
+    position: absolute;
+    left: 0;
+    color: #40c040;
+  }
+
+  /* Buttons styled as links */
+  a.button-link {
+    display: inline-block;
+    padding: 6px 14px;
+    border: 1px solid #60ff60;
+    color: #60ff60;
+    text-decoration: none;
+    font-size: 0.9rem;
+    border-radius: 3px;
+    margin-top: 1rem;
+    cursor: pointer;
+  }
+  a.button-link:hover {
+    background: #306030;
+  }
+
+  /* Footer */
+  footer {
+    border-top: 1px solid #060606;
+    padding: 1rem 0;
+    text-align: center;
+    font-size: 0.8rem;
+    color: #404040;
+  }
+
+  /* Responsive */
+  @media (max-width: 600px) {
+    .container {
+      margin: 70px 1rem 30px;
+      padding: 0 10px;
+    }
+    header nav a {
+      margin-left: 1rem;
+      font-size: 0.8rem;
+    }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>TinyTool</h1>
+  <nav>
+    <a href="https://github.com/mario_crazyy" target="_blank" rel="noopener noreferrer">GitHub</a>
+    <a href="https://incrediblemarioweb.fpr.net" target="_blank" rel="noopener noreferrer">Website</a>
+  </nav>
+</header>
+
+<div class="container">
+  <h1 class="page-title">TinyTool by mario_crazyy</h1>
+
+  <section>
+    <h2>About TinyTool</h2>
+    <p>TinyTool is a simple Windows batch utility that helps you clean temporary files, list system info, manage startup apps, and run a speed test — all via a minimal console interface.</p>
+  </section>
+
+  <section>
+    <h2>Features</h2>
+    <ul>
+      <li>Clear temporary files quickly</li>
+      <li>Display IPv4/IPv6, MAC address, Windows version, and proxy settings</li>
+      <li>List and disable startup applications</li>
+      <li>Direct link to speedtest.net for internet speed testing</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Download</h2>
+    <p><a href="https://github.com/mario_crazyy/TinyTool/releases/latest" target="_blank" rel="noopener noreferrer" class="button-link">Download Latest Version</a></p>
+  </section>
+</div>
+
+<footer>
+  &copy; 2025 mario_crazyy | <a href="https://github.com/mario_crazyy" target="_blank" rel="noopener noreferrer">GitHub</a>
+</footer>
+
+</body>
+</html>

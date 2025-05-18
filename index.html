@@ -9,121 +9,122 @@
   * {
     margin: 0; padding: 0; box-sizing: border-box;
   }
+
   body {
-    font-family: "Courier New", Courier, monospace;
-    background: #121212;
-    color: #a0ffa0;
+    background: #1c1c1c;
+    color: #d0d0d0;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     line-height: 1.5;
   }
 
-  /* Fixed header */
   header {
-    background: #0f0f0f;
-    border-bottom: 1px solid #060606;
-    position: fixed;
-    top: 0; left: 0; right: 0;
+    background: #222;
     height: 60px;
     display: flex;
     align-items: center;
-    padding: 0 20px;
-    z-index: 1000;
+    padding: 0 30px;
+    border-bottom: 1px solid #333;
   }
+
   header h1 {
-    font-weight: normal;
+    font-weight: 400;
     font-size: 1.2rem;
-    color: #60ff60;
+    color: #a0d080;
   }
-  header nav {
+
+  nav {
     margin-left: auto;
   }
-  header nav a {
+
+  nav a {
+    color: #a0d080;
+    text-decoration: none;
+    font-weight: 500;
     font-size: 0.9rem;
     margin-left: 2rem;
-    color: #60ff60;
-    text-decoration: none;
   }
-  header nav a:hover {
+
+  nav a:hover {
     text-decoration: underline;
   }
 
-  /* Main container */
   .container {
-    max-width: 960px;
+    max-width: 900px;
     margin: 80px auto 40px;
-    padding: 0 20px;
+    padding: 0 30px;
   }
 
-  /* Page title */
   h1.page-title {
-    font-weight: normal;
-    font-size: 2rem;
+    font-weight: 400;
+    font-size: 2.5rem;
     margin-bottom: 1rem;
-    color: #60ff60;
+    color: #a0d080;
   }
 
-  /* Sections */
-  section {
-    margin-bottom: 3rem;
-  }
   h2 {
-    font-weight: normal;
-    font-size: 1.3rem;
-    border-bottom: 1px solid #0b0b0b;
-    padding-bottom: 6px;
+    font-weight: 400;
+    font-size: 1.5rem;
     margin-bottom: 1rem;
-    color: #60ff60;
+    border-bottom: 1px solid #333;
+    padding-bottom: 0.25rem;
   }
+
   p {
     margin-bottom: 1rem;
+    font-size: 1rem;
+    color: #c0c0c0;
   }
+
   ul {
     list-style: none;
-    padding-left: 1rem;
+    margin-left: 1rem;
   }
+
   ul li {
-    position: relative;
-    padding-left: 1.2rem;
     margin-bottom: 0.5rem;
+    position: relative;
+    padding-left: 1rem;
+    color: #c0c0c0;
   }
+
   ul li::before {
-    content: "»";
+    content: "›";
     position: absolute;
     left: 0;
-    color: #40c040;
+    color: #809060;
+    font-weight: 600;
   }
 
-  /* Buttons styled as links */
   a.button-link {
     display: inline-block;
-    padding: 6px 14px;
-    border: 1px solid #60ff60;
-    color: #60ff60;
+    padding: 6px 16px;
+    border: 1px solid #a0d080;
+    color: #a0d080;
     text-decoration: none;
-    font-size: 0.9rem;
-    border-radius: 3px;
-    margin-top: 1rem;
-    cursor: pointer;
+    font-weight: 600;
+    border-radius: 2px;
+    transition: background 0.25s ease;
   }
+
   a.button-link:hover {
-    background: #306030;
+    background: #304020;
   }
 
-  /* Footer */
   footer {
-    border-top: 1px solid #060606;
-    padding: 1rem 0;
+    border-top: 1px solid #333;
     text-align: center;
-    font-size: 0.8rem;
-    color: #404040;
+    font-size: 0.9rem;
+    color: #555;
+    padding: 15px 30px;
   }
 
-  /* Responsive */
   @media (max-width: 600px) {
     .container {
-      margin: 70px 1rem 30px;
-      padding: 0 10px;
+      margin: 70px 20px 30px;
+      padding: 0;
     }
-    header nav a {
+
+    nav a {
       margin-left: 1rem;
       font-size: 0.8rem;
     }
@@ -160,7 +161,7 @@
 
   <section>
     <h2>Download</h2>
-    <p><a href="https://github.com/mario_crazyy/TinyTool/releases/latest" target="_blank" rel="noopener noreferrer" class="button-link">Download Latest Version</a></p>
+    <p><a href="https://github.com/mario_crazyy/TinyTool/releases/latest" class="button-link" target="_blank" rel="noopener noreferrer">Download Latest Version</a></p>
   </section>
 </div>
 
